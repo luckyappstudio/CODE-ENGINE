@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bb_menu_nearby"
+        android:icon="@drawable/near"
+        android:title="near by" />
+
+    <item
+        android:id="@+id/bb_menu_unlimited"
+        android:icon="@drawable/card"
+        android:title="fit pass" />
+    <item
+        android:id="@+id/bb_menu_history"
+        android:icon="@drawable/history"
+        android:title="my passes" />
+
+    <item
+        android:id="@+id/bb_menu_about"
+        android:icon="@drawable/about"
+        android:title="About" />
+
+
+
+
+
+
+
+
+
+</menu>

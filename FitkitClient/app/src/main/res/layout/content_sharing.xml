@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:foreground="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="in.fitkitapp.fitkit.SharingActivity"
+    tools:showIn="@layout/activity_sharing"
+    android:orientation="vertical">
+    <ImageView
+        android:src="@drawable/congratulations"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="200dp"
+        android:layout_height="200dp" />
+
+    <TextView
+        android:textColor="@android:color/primary_text_light"
+        android:text="Congratulations"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"/>
+    <TextView
+        android:text="Your session has been succesfully booked \n share this on your facebook and inspire friends"
+        android:textColor="@android:color/tertiary_text_light"
+        android:textSize="12sp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"/>
+
+
+    <com.facebook.share.widget.ShareButton
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/fb_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:textColor="@android:color/holo_red_light"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="If any of your friends installs fitkit app through your unique sharing link  you will recive fitkit points which can be used to book your next sessions."
+        android:textSize="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="5dp"
+        android:textColor="@android:color/primary_text_light"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="What's Next ?"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:gravity="center"
+        android:textColor="@android:color/secondary_text_light"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Visit nearest fit kit gym and SWEAT OUT \n we have sent the pass id to your registered mobile number  show that to the gym facility (Alternativey find it in my passes) \nHappy Fitness"
+        android:textSize="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/mypasses"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/colorAccent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="My Passes"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

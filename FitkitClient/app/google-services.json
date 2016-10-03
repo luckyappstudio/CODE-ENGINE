@@ -1,0 +1,38 @@
+{
+  "project_info": {
+    "project_number": "335269014154",
+    "project_id": "fitkit-a5b09"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:335269014154:android:482d802d1deaf05e",
+        "android_client_info": {
+          "package_name": "in.fitkitapp.fitkit"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKIZkMlEO_xjDrceSvvEeGiYGOTOUfwBM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-79258057-1"
+          }
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

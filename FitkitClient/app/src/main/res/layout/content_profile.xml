@@ -1,0 +1,665 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_marginTop="50dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/timeline"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+        <com.android.volley.toolbox.NetworkImageView
+
+            android:id="@+id/logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"/>
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/centertitle"
+            android:text="SAMPLE NAME"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/primary_text_light"
+            android:layout_toRightOf="@id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:id="@+id/rating_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/centertitle"
+            android:layout_toRightOf="@id/logo"
+            android:orientation="horizontal">
+            <ImageView
+                android:src="@drawable/star"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+            <TextView
+                android:textColor="@android:color/primary_text_light"
+                android:fontFamily="sans-serif-condensed"
+                android:textStyle="bold"
+                android:text="Rating:"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/center_rating"
+                android:textColor="@android:color/primary_text_light"
+                android:fontFamily="sans-serif-condensed"
+                android:textStyle="bold"
+                android:text="4.9"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rating_layout"
+            android:layout_toRightOf="@id/logo"
+            android:orientation="horizontal">
+            <ImageView
+                android:src="@drawable/trainers"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+            <TextView
+                android:textColor="@android:color/primary_text_light"
+                android:fontFamily="sans-serif-condensed"
+                android:textStyle="bold"
+                android:text="trainers :"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/center_trainers"
+                android:textColor="@android:color/primary_text_light"
+                android:fontFamily="sans-serif-condensed"
+                android:textStyle="bold"
+                android:text="8"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/facilities"
+                android:textColor="@android:color/primary_text_light"
+                android:fontFamily="sans-serif-condensed"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:text="Facilities :"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_below="@id/facilities"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center">
+                <LinearLayout
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView
+                        android:src="@drawable/ac"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"/>
+                    <TextView
+                        android:fontFamily="sans-serif-condensed"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/primary_text_light"
+                        android:text="Ac"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp">
+                    <ImageView
+                        android:src="@drawable/steam"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"/>
+                    <TextView
+                        android:fontFamily="sans-serif-condensed"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/primary_text_light"
+                        android:text="Steam"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp">
+                    <ImageView
+                        android:src="@drawable/music"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"/>
+                    <TextView
+                        android:fontFamily="sans-serif-condensed"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/primary_text_light"
+                        android:text="Music"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView
+                        android:src="@drawable/parking"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"/>
+                    <TextView
+                        android:fontFamily="sans-serif-condensed"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/primary_text_light"
+                        android:text="Parking"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/location"
+            android:textColor="@android:color/primary_text_light"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:text="Address:"
+
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/address"
+            android:textColor="@android:color/primary_text_light"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Gold'-s gym,4th6floor ,Near bata sh6ow room ,\nejipura,\t Bang5alore-515001"
+
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <Button
+            android:id="@+id/locatecenter"
+            android:layout_gravity="center_horizontal"
+            android:text="Locate on map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/plans"
+            android:textColor="@android:color/primary_text_light"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:text="Pass:\t\t\t (select pass to buy)"
+
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:theme="@style/Base.CardView"
+            app:cardElevation="10dp"
+            app:cardUseCompatPadding="true"
+            app:cardPreventCornerOverlap="true"
+            app:cardMaxElevation="10dp"
+            app:cardCornerRadius="10dp"
+            >
+        <RelativeLayout
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            >
+
+         <LinearLayout
+             android:id="@+id/oneday"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:gravity="left">
+             <RelativeLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:gravity="center">
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:orientation="horizontal"
+                     android:gravity="center">
+
+             <Button
+                 android:gravity="center"
+                 android:text="1 day pass    "
+                 android:backgroundTint="@color/colorAccent"
+                 android:textColor="@android:color/white"
+                 android:id="@+id/one_day_pass"
+                 android:layout_alignParentLeft="true"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content" />
+             <TextView
+                 android:textColor="@android:color/holo_orange_light"
+                 android:layout_marginLeft="28dp"
+                 android:gravity="center"
+                 android:textSize="15dp"
+                 android:text="\u20B9"
+                 android:fontFamily="sans-serif-condensed"
+                 android:textStyle="bold"
+                 android:layout_toRightOf="@id/one_day_pass"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content" />
+
+                     <TextView
+                         android:id="@+id/one_day_pass_price"
+                         android:textColor="@android:color/holo_orange_light"
+                         android:gravity="center"
+                         android:textSize="15dp"
+                         android:text="90"
+                         android:fontFamily="sans-serif-condensed"
+                         android:textStyle="bold"
+                         android:layout_toRightOf="@id/one_day_pass"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content" />
+
+                     <TextView
+                         android:gravity="center"
+                         android:textSize="15dp"
+                         android:text="\t\t(valid for "
+                         android:fontFamily="sans-serif-condensed"
+                         android:textStyle="bold"
+                         android:layout_toRightOf="@id/one_day_pass"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content" />
+
+                     <TextView
+                         android:gravity="center"
+                         android:textSize="15dp"
+                         android:text="10"
+                         android:fontFamily="sans-serif-condensed"
+                         android:textStyle="bold"
+                         android:layout_toRightOf="@id/one_day_pass"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content" />
+                     <TextView
+                         android:gravity="center"
+                         android:textSize="15dp"
+                         android:text="days)"
+                         android:fontFamily="sans-serif-condensed"
+                         android:textStyle="bold"
+                         android:layout_toRightOf="@id/one_day_pass"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content" />
+                 </LinearLayout>
+
+
+             </RelativeLayout>
+         </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/threeday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_below="@id/oneday">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <Button
+                            android:gravity="center"
+                            android:text="7 days pass  "
+                            android:backgroundTint="@color/colorAccent"
+                            android:textColor="@android:color/white"
+                            android:id="@+id/seven_day_pass"
+                            android:layout_alignParentLeft="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:textColor="@android:color/holo_orange_light"
+                            android:layout_marginLeft="20dp"
+                            android:gravity="center"
+                            android:textSize="15dp"
+                            android:text="\u20B9"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textStyle="bold"
+                            android:layout_toRightOf="@id/one_day_pass"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/seven_day_pass_price"
+                            android:textColor="@android:color/holo_orange_light"
+                            android:gravity="center"
+                            android:textSize="15dp"
+                            android:text="400"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textStyle="bold"
+                            android:layout_toRightOf="@id/one_day_pass"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:gravity="center"
+                            android:textSize="15dp"
+                            android:text="\t\t(valid for "
+                            android:fontFamily="sans-serif-condensed"
+                            android:textStyle="bold"
+                            android:layout_toRightOf="@id/one_day_pass"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:gravity="center"
+                            android:textSize="15dp"
+                            android:text="15"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textStyle="bold"
+                            android:layout_toRightOf="@id/one_day_pass"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:gravity="center"
+                            android:textSize="15dp"
+                            android:text="days)"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textStyle="bold"
+                            android:layout_toRightOf="@id/one_day_pass"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sevenday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_below="@id/threeday">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <Button
+                            android:gravity="center"
+                            android:text="15 day   pass"
+                            android:backgroundTint="@color/colorAccent"
+                            android:textColor="@android:color/white"
+                            android:id="@+id/buy_fifteen_day_pass"
+                            android:layout_alignParentLeft="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center"
+                            android:textSize="15dp"
+                            android:text="\u20B9"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textStyle="bold"
+                            android:layout_toRightOf="@id/one_day_pass"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/holo_orange_light"/>
+
+                        <TextView
+                            android:id="@+id/fifteen_day_pass_price"
+                            android:textColor="@android:color/holo_orange_light"
+                            android:gravity="center"
+                            android:textSize="15dp"
+                            android:text="1200"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textStyle="bold"
+                            android:layout_toRightOf="@id/one_day_pass"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:gravity="center"
+                            android:textSize="15dp"
+                            android:text="\t\t(valid for "
+                            android:fontFamily="sans-serif-condensed"
+                            android:textStyle="bold"
+                            android:layout_toRightOf="@id/one_day_pass"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:gravity="center"
+                            android:textSize="15dp"
+                            android:text="30"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textStyle="bold"
+                            android:layout_toRightOf="@id/one_day_pass"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:gravity="center"
+                            android:textSize="15dp"
+                            android:text="days)"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textStyle="bold"
+                            android:layout_toRightOf="@id/one_day_pass"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:soundEffectsEnabled="true"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:theme="@style/Base.CardView"
+            app:cardElevation="10dp"
+            app:cardUseCompatPadding="true"
+            app:cardPreventCornerOverlap="true"
+            app:cardMaxElevation="5dp"
+            app:cardCornerRadius="10dp"
+
+            android:id="@+id/monthlypass"
+            android:layout_gravity="center">
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical" android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_gravity="center">
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/pro_image"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    />
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/type"
+                    android:textColor="@android:color/primary_text_light"
+                    android:layout_marginTop="50dp"
+                    android:gravity="center"
+                    android:text="Monthly pass  ( \u20B92500 ) "
+                    android:layout_toRightOf="@id/pro_image"
+                    android:textSize="20sp"
+                    android:includeFontPadding="true"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textStyle="bold"
+                    android:text="Workout at this gym and other 100+ centers in Bangalore."
+                    android:gravity="center"
+                    android:layout_below="@id/pro_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+
+        <android.support.v7.widget.CardView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:soundEffectsEnabled="true"
+            app:theme="@style/Base.CardView"
+            app:cardElevation="10dp"
+            app:cardUseCompatPadding="true"
+            app:cardPreventCornerOverlap="true"
+            app:cardMaxElevation="10dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardCornerRadius="10dp"
+            android:id="@+id/unlimitedpass"
+            android:layout_gravity="center"
+            >
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical" android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_gravity="center">
+
+                <com.android.volley.toolbox.NetworkImageView
+
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/ul_image"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    />
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@android:color/primary_text_light"
+                    android:layout_marginTop="50dp"
+                    android:gravity="center"
+                    android:text="Unlimited pass  ( \u20B93500 ) "
+                    android:layout_toRightOf="@id/ul_image"
+                    android:textSize="20sp"
+                    android:includeFontPadding="true"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textStyle="bold"
+                    android:text="Unlimited Workouts  any where in city."
+                    android:gravity="center"
+                    android:layout_below="@id/ul_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>

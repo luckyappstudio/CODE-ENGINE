@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Fitkit</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_workout">Workout</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_profile">Profile</string>
+    <string name="aerobics">AEROBICS</string>
+    <string name="title_activity_unlimited">Fitkit Unlimited Pass</string>
+    <string name="title_activity_results">Results</string>
+    <string name="title_activity_monthly">Fitkit Monthly Pass</string>
+    <string name="title_activity_summary">Summary</string>
+    <string name="title_activity_myorders">Myorders</string>
+    <string name="facebook_app_id">156938284712210</string>
+
+
+    <string name="fb_login_protocol_scheme">fb156938284712210</string>
+    <string name="title_activity_sharing">Booking Confirmed</string>
+
+</resources>

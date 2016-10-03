@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+    <TextView
+        android:gravity="center"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="30dp"
+        android:textColor="@android:color/primary_text_light"
+        android:textStyle="bold"
+        android:text="Workout any where in Chennai."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ImageView
+
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/explore"
+        />
+
+    <TextView
+
+        android:gravity="center"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="20dp"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:text="Just  \u20B9 2999 per month"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="we have 100 partners all over chennai we have covered you ."
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:text="BUY MEMBERSHIP"
+        android:textColor="#fff"
+        android:backgroundTint="@android:color/holo_purple"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

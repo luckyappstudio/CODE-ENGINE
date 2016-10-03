@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cardview"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    app:cardMaxElevation="5dp"
+    >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:layout_marginTop="20dp"
+        android:id="@+id/image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        />
+    <TextView
+        android:id="@+id/name"
+        android:textColor="@android:color/primary_text_light"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_marginLeft="10dp"
+        android:text="Gold's Gym"
+        android:layout_toRightOf="@id/image"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/location_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_toRightOf="@id/image"
+        android:layout_below="@id/name"
+        android:layout_marginLeft="10dp">
+        <ImageView
+            android:src="@drawable/location"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:id="@+id/location_city"
+            android:textColor="@android:color/tertiary_text_light"
+            android:text="Ejipura,Bangalore"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/startsfrom"
+        android:text="Starts from"
+        android:textColor="@android:color/primary_text_light"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_toRightOf="@id/image"
+        android:layout_below="@id/location_layout"
+        android:gravity="right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/price_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/image"
+        android:layout_below="@id/startsfrom"
+        android:orientation="horizontal"
+        android:gravity="right">
+    <TextView
+        android:text="\u20B9\t"
+        android:textColor="@android:color/holo_orange_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="bold"/>
+    <TextView
+        android:textColor="@android:color/holo_orange_light"
+        android:id="@+id/price"
+        android:text="100"
+        android:textSize="30dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/price_layout"
+        android:layout_toRightOf="@id/image"
+        android:orientation="horizontal"
+        android:gravity="right">
+
+        <TextView
+            android:id="@+id/distance"
+            android:background="@color/colorAccent"
+            android:textColor="#fff"
+            android:text="0.3 km"
+            android:padding="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="\t\t\t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           />
+        <ImageView
+            android:src="@drawable/star"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center"/>
+        <TextView
+            android:id="@+id/rating"
+            android:textColor="@android:color/secondary_text_light"
+            android:fontFamily="sans-serif-condensed"
+            android:text="4.9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+</android.support.v7.widget.CardView>

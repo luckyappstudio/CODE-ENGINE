@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:gravity="center">
+
+    <ImageView
+        android:src="@android:drawable/stat_notify_error"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+    <TextView
+        android:textColor="#fff"
+        android:text="Please check your internet settings."
+        android:textSize="23dp"
+        android:textStyle="normal"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+    <Button
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="bold"
+        android:id="@+id/retry"
+        android:text="Retry"
+        android:backgroundTint="@color/colorAccent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

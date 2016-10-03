@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:soundEffectsEnabled="true"
+    app:theme="@style/Base.CardView"
+    app:cardElevation="10dp"
+    app:cardUseCompatPadding="true"
+    app:cardPreventCornerOverlap="true"
+    app:cardMaxElevation="5dp"
+    app:cardCornerRadius="5dp"
+    android:layout_gravity="center">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_gravity="center">
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/pro_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        />
+    <TextView
+        
+        android:id="@+id/type"
+        android:textColor="@android:color/primary_text_light"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="@string/aerobics"
+        android:layout_toRightOf="@id/pro_image"
+        android:textSize="20sp"
+        android:includeFontPadding="true"
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>
+
+</android.support.v7.widget.CardView>

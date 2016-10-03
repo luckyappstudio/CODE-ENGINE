@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+    <TextView
+        android:id="@+id/order_id"
+        android:layout_alignParentLeft="true"
+        android:text="PASS  ID :"
+        android:textColor="@android:color/primary_text_light"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/order"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@id/order_id"
+        android:text="1234"
+        android:textColor="@android:color/primary_text_light"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/centerloc"
+        android:layout_marginLeft="20dp"
+        android:gravity="center"
+        android:layout_below="@id/order_id"
+        android:text="Location:"
+        android:textColor="@android:color/primary_text_light"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/location"
+        android:layout_marginLeft="20dp"
+        android:gravity="center"
+        android:layout_toRightOf="@id/centerloc"
+        android:layout_below="@id/order"
+        android:text="Gold's gym Koramangala"
+        android:textColor="@android:color/primary_text_light"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/expirydate"
+        android:layout_marginLeft="20dp"
+        android:gravity="center"
+        android:layout_below="@id/centerloc"
+        android:text="Expiry date"
+        android:textColor="@android:color/primary_text_light"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/expiry"
+        android:layout_marginLeft="20dp"
+        android:gravity="center"
+        android:layout_toRightOf="@id/centerloc"
+        android:layout_below="@id/location"
+        android:text="28/4/616"
+        android:textColor="@android:color/primary_text_light"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/pricelayout"
+        android:layout_marginLeft="20dp"
+        android:gravity="center"
+        android:layout_below="@id/expirydate"
+        android:text="Price"
+        android:textColor="@android:color/primary_text_light"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/paidprice"
+        android:layout_marginLeft="20dp"
+        android:gravity="center"
+        android:layout_toRightOf="@id/centerloc"
+        android:layout_below="@id/expiry"
+        android:text="\u20B9100"
+        android:textColor="@android:color/primary_text_light"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+
+
+</RelativeLayout>
+</android.support.v7.widget.CardView>
